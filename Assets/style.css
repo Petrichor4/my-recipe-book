@@ -2,23 +2,11 @@ aside {
     height: 600px;
     width: 300px;
 }
-/* <style type="text/tailwindcss">
-.card {
-    height: 14rem;
-    width: 24rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
-    border-radius: 0.5rem;
-    flex: none;
-    background-image: url(Assets/Placeholder.png);
-    transition: 1000ms;
-    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+#card {
+    width: 600px;
+            height: 375px;
+            margin: 20px;
 }
-@media (max-width:1150px) {
-    .card {
-        width:12rem;
-        height: 8rem;
-    }
+img {
+    background-size: contain;
 }
-</style> */

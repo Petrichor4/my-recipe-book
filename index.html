@@ -6,17 +6,34 @@
     <title>My Recipe Book</title>
     <link rel="stylesheet" href="Assets/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        article {
+            width: 500px;
+            height: 300px;
+            margin: 30px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        #front {
+            
+        }
+    </style>
 </head>
 <body>
-    <main class="flex justify-evenly">
-        <aside class="shadow-md bg-stone-400 m-5 rounded-lg mt-8 min-w-[300px]"></aside>
-        <section id="recipes" class=" flex-col lg:flex-row flex flex-wrap duration-1000 mt-8 lg:h-[32rem] xl:max-w-[59rem] 2xl:h-[42rem] 2xl:max-w-[2000px]">
-            <div class="bg-[url('Assets/Placeholder.png')] duration-1000 shadow-md max-[1150px]:h-48 max-[1150px]:w-56 mx-8 xl:h-56 w-96 lg:mx-4 rounded-lg flex-none 2xl:w-[450px] 2xl:h-[300px]"></div>
-            <div class="bg-[url('Assets/Placeholder.png')] duration-1000 shadow-md max-[1150px]:h-48 max-[1150px]:w-56 mx-8 xl:h-56 w-96 lg:mx-4 rounded-lg flex-none 2xl:w-[450px] 2xl:h-[300px]"></div>
-            <div class="bg-[url('Assets/Placeholder.png')] duration-1000 shadow-md max-[1150px]:h-48 max-[1150px]:w-56 mx-8 xl:h-56 w-96 lg:mx-4 rounded-lg flex-none 2xl:w-[450px] 2xl:h-[300px]"></div>
-            <div class="bg-[url('Assets/Placeholder.png')] duration-1000 shadow-md max-[1150px]:h-48 max-[1150px]:w-56 mx-8 xl:h-56 w-96 lg:mx-4 rounded-lg flex-none 2xl:w-[450px] 2xl:h-[300px]"></div>
+    <main class="flex justify-start">
+        <aside class="shadow-md bg-stone-200 m-5 rounded-lg mt-8 min-w-[300px]"></aside>
+        <section>
+            <article id="recipe-card">
+                <div id="front">
 
+                </div>
+                <div id="back">
+
+                </div>
+            </article>
         </section>
     </main>
+    <script src="./Assets/script.js"></script>
 </body>
 </html>

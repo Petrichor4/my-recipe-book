@@ -1,12 +1,39 @@
-aside {
-    height: 600px;
-    width: 300px;
+#card img {
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  width: 200px;
+  display: inline;
+}
+#recipe-cards {
+  perspective: 1000px;
 }
 #card {
-    width: 600px;
-            height: 375px;
-            margin: 20px;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+  cursor: pointer;
 }
-img {
-    background-size: contain;
+#front,
+#back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: inherit;
+  overflow: scroll;
+  backface-visibility: hidden;
+}
+#front {
+  background-color: #f5f5f5;
+}
+#back {
+  background-color: #f5f5f5;
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+}
+.flipped {
+  transform: rotateX(180deg);
 }

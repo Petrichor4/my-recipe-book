@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Recipe Book</title>
+    <link rel="stylesheet" href="Assets/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <main class="flex justify-start">
+      <aside
+        class="shadow-md bg-stone-200 m-5 rounded-lg w-[300px] h-[600px]"
+      ></aside>
+      <section id="recipes-cards" class="flex flex-wrap">
+        <article id="card" class="my-5">
+          <div id="front" class="flex justify-start">
+            <img src="/imgs/MarryMeChicken_7.webp" alt="" />
+            <div id="info" class="flex items-start flex-col">
+              <h2 class="w-full block px-4 py-2 text-3xl text-center">
+                Marry Me Chicken
+              </h2>
+              <p aria-placeholder="discription" class="p-4">
+                Enter a description of the recipe here.
+              </p>
+            </div>
+          </div>
+          <div id="back">
+            <h2>Recipe</h2>
+          </div>
+        </article>
+        <article id="card" class="my-5">
+          <div id="front" class="flex justify-start">
+            <img src="/imgs/MarryMeChicken_7.webp" alt="" />
+            <div id="info" class="flex items-start flex-col">
+              <h2 class="w-full block px-4 py-2 text-3xl text-center">
+                Marry Me Chicken
+              </h2>
+              <p aria-placeholder="discription" class="p-4">
+                Enter a description of the recipe here.
+              </p>
+            </div>
+          </div>
+          <div id="back">
+            <h2>Recipe</h2>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="./Assets/script.js"></script>
+  </body>
 </html>

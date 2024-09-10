@@ -29,23 +29,38 @@
             <h2>Recipe</h2>
           </div>
         </article>
-        <article id="card" class="my-5">
-          <div id="front" class="flex justify-start">
-            <img src="/imgs/MarryMeChicken_7.webp" alt="" />
-            <div id="info" class="flex items-start flex-col">
-              <h2 class="w-full block px-4 py-2 text-3xl text-center">
-                Marry Me Chicken
-              </h2>
-              <p aria-placeholder="discription" class="p-4">
-                Enter a description of the recipe here.
-              </p>
+        <article id="new-card" class="my-5">
+            <div id="front" class="flex justify-start">
+              <div id="info" class="flex flex-col flex-1 justify-center items-center">
+                <h2 class="w-full block px-4 py-2 text-3xl text-center">
+                  Click Here To Create A New Recipe
+                </h2>
+                <button id="add-new"></button>
+              </div>
             </div>
-          </div>
-          <div id="back">
-            <h2>Recipe</h2>
-          </div>
-        </article>
+          </article>
+          <article id="card" class="my-5">
+            <div id="front" class="flex justify-start">
+              <div class="flex-col content-center justify-center h-[300px] w-[200px]">
+                  <input class="mx-2"  type="text">
+                  <button class="h-[50px] w-[100px] bg-stone-200 rounded-xl block mx-12 my-5">Add Image</button>
+              </div>
+              <div id="info" class="flex items-start flex-col">
+                <h2 contenteditable="true" class="w-full block px-4 py-2 text-3xl text-center">
+                  Marry Me Chicken
+                </h2>
+                <p contenteditable="true" class="p-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, vel iste consequuntur sapiente fuga rem sed distinctio illum cum doloribus?
+                </p>
+              </div>
+            </div>
+            <div id="back">
+              <h2>Recipe</h2>
+            </div>
+          </article>
+  
       </section>
+      
     </main>
     <script src="./Assets/script.js"></script>
   </body>

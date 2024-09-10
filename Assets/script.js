@@ -1,5 +1,5 @@
 const addNew = document.getElementById('add-new');
-const card = document.getElementById('card');
+const card = document.querySelectorAll('#card');
 
 // Function for adding a new recipe card to the page
 function createCard() {
@@ -10,10 +10,10 @@ function createCard() {
     const a = document.createElement('a');
     const section = document.getElementById('recipes');    
 }
-card.addEventListener('click', function() {
+card.forEach(card => card.addEventListener('click', () =>  {
     if (card.classList.contains('flipped')) {
         card.classList.remove('flipped');
     } else {
         card.classList.add('flipped');
     }
-})
+}))

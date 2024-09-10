@@ -7,10 +7,11 @@
 #recipe-cards {
   perspective: 1000px;
 }
-#card {
+#card, #new-card {
   position: relative;
   width: 500px;
   height: 300px;
+  margin-right: 20px;
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: transform 0.7s;
@@ -35,4 +36,14 @@
 }
 .flipped {
   transform: rotateX(180deg);
+}
+#add-new {  
+    background-image: url(/imgs/plus-square-outline.256x256.png);
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+}
+#new-card:active #add-new{
+    background-image: url(/imgs/plus-square.256x256.png);
+    transition: 150ms;
 }

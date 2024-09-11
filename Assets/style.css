@@ -104,3 +104,8 @@
     background-image: url(/imgs/plus-square.256x256.png);
     transition: 150ms;
 } */
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}

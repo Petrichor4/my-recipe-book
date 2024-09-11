@@ -37,6 +37,45 @@
 .flipped {
   transform: rotateX(180deg);
 }
+
+/* footer */
+footer{
+  background-color: white;
+}
+.footerContainer{
+  width: 100%;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+}
+.icons a{
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.icons a i{
+  font-size: 2em;
+  color: black;
+}
+
+.footerNav ul{
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.footerNav ul li a{
+  color: black;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
 #add-new {  
     background-image: url(/imgs/plus-square-outline.256x256.png);
     background-size: contain;

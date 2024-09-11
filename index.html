@@ -16,35 +16,64 @@
   
       <div class="right">
         <span>Favorites</span>
-        <span>Search-Bar</span>
-  
-          <i class="fa-solid fa-right-to-bracket"></i>
-        </a>
+        <input class="rounded-full p-2 px-3" placeholder="Search" type="text">  
+        <i class="fa-solid fa-right-to-bracket"></i>
       </div>
     </nav>
 <body>
   <main class="flex justify-start">
-    <aside class="shadow-md bg-stone-200 m-5 rounded-lg w-[300px] h-[600px]"></aside>
+    <aside class="shadow-md bg-stone-200 m-5 rounded-lg min-w-[300px] h-[600px]"></aside>
     <section id="recipes-cards" class="flex flex-wrap">
       <!-- Existing Recipe Card -->
       <article class="my-5 card">
         <div id="front" class="flex justify-start">
-          <img src="/imgs/MarryMeChicken_7.webp" alt="" />
+          <img src="./imgs/MarryMeChicken_7.webp" alt="" />
           <div id="info" class="flex items-start flex-col">
             <h2 class="w-full block px-4 py-2 text-3xl text-center">
               Marry Me Chicken
             </h2>
             <p class="p-4">
-              A delicious chicken recipe that will make anyone fall in love with you.
+              Marry Me Chicken is creamy, juicy, and full of flavor! It's said that this chicken dinner is so good that if you cook it for your partner, he will propose to you! Yes, it's THAT amazing! Funny name, but probably the best chicken recipe ever!
             </p>
 
           </div>
-          <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+          <div class="flip-icon" onclick="flipCard(this)">
+            <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;"">
+            </i></div>
         </div>
         <div id="back">
-          <h2>Recipe</h2>
-          <a href="https://www.example.com/marry-me-chicken" target="_blank">Go to Recipe</a>
-          <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+          <h2>Recipe:</h2>
+          <p class="w-full p-4 h-4/5 overflow-auto">
+  Ingredients
+  ▢3 large chicken breasts boneless and skinless, sliced lengthwise into thin cutlets
+  ▢½ teaspoon salt
+  ▢¼ teaspoon ground black pepper
+  ▢6 tablespoons (50 grams) all-purpose flour
+  ▢2 tablespoons (30 ml) olive oil
+  ▢2 tablespoons (28 grams) unsalted butter
+  ▢3 cloves garlic minced
+  ▢1 cup (240 ml) chicken stock
+  ▢1 cup (240 ml) heavy cream (double cream in the UK)
+  ▢½ cup (43 grams) parmesan cheese grated
+  ▢1 teaspoon chili flakes
+  ▢¼ teaspoon oregano
+  ▢¼ teaspoon thyme
+  ▢⅓ cup sundried tomatoes chopped
+  ▢1 tablespoon fresh basil leaves
+  Instructions
+  Season chicken with salt and pepper, then dredge in flour and shake off any excess.
+            
+  In a large skillet, heat olive oil and melt the butter on medium heat. Swirl pan to coat with oil and butter evenly.
+  Brown the chicken (do not overcrowd and work in batches if needed) for 4-5 minutes on each side or until golden brown and cooked through. Transfer onto a plate, cover, and set aside.
+  Saute the garlic for a minute or until it's fragrant. Add the chicken stock, and deglaze the pan scraping any bits stuck to the bottom of the pan with a wooden spoon.
+  Adjust the heat to medium-low, and add the heavy cream and the parmesan cheese to the skillet. Allow the sauce to simmer for a couple of minutes, then season with chili flakes, thyme, and oregano.
+  Season with salt and pepper to your taste, add the sundried tomatoes then put the chicken back in the sauce and let the sauce simmer and thicken for a few more minutes.
+  Garnish with chopped fresh basil leaves and serve warm over pasta or rice.
+            </p>
+          <a href="https://littlesunnykitchen.com/marry-me-chicken/" target="_blank">Go to Recipe</a>
+          <div class="flip-icon" onclick="flipCard(this)">
+            <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i>
+          </div>
         </div>
       </article>
 

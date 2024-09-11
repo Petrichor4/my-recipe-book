@@ -15,12 +15,15 @@ document.getElementById('save-recipe').addEventListener('click', function() {
             </h2>
             <p class="p-4">${description}</p>
           </div>
-          <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+          <div class="flip-icon" onclick="flipCard(this)">
+          <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i>
+          </div>
         </div>
         <div id="back">
-          <h2>Recipe</h2>
+          <h2>Recipe:</h2>
+          <p contenteditable='true' class="w-4/5 p-4 h-4/5 overflow-auto">Copy Your Recipe Here!</p>
           <a href="${linkUrl}" target="_blank">Go to Recipe</a>
-          <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+          <div class="flip-icon" onclick="flipCard(this)"><i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i></div>
         </div>
     `;
 

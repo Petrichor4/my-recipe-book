@@ -17,7 +17,6 @@
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: transform 0.7s;
-  cursor: pointer;
 }
 #front,
 #back {
@@ -29,12 +28,26 @@
   backface-visibility: hidden;
 }
 #front {
-  background-color: #f5f5f5;
+  background-color: white;
 }
 #back {
-  background-color: #f5f5f5;
+  background-color: white;
   transform: rotateX(180deg);
   backface-visibility: hidden;
+}
+p {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+#back h2 {
+  text-align: center;
+  font-size: x-large;
+}
+#back a {
+  margin: 10px;
+  color: blue;
+  font-display: underline;
 }
 .flipped {
   transform: rotateX(180deg);
@@ -61,9 +74,22 @@ nav {
   font-weight: 600;
 }
 
+.right input {
+  width: 100px;
+  transition: 500ms;
+}
+
+.right input:focus {
+  outline: solid 2px blue;
+  border-radius: 50px;
+  /* outline: blue; */
+  width: 250px;
+  transition: 300ms;
+}
+
 /* footer */
 #save-recipe {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px;
   border: none;
@@ -76,34 +102,34 @@ nav {
   right: 10px;
   cursor: pointer;
 }
-.footer{
+.footer {
   background-color: white;
 }
-.footerContainer{
+.footerContainer {
   width: 100%;
 }
-.icons{
+.icons {
   display: flex;
   justify-content: center;
 }
-.icons a{
-  padding:  10px;
+.icons a {
+  padding: 10px;
   background-color: white;
   margin: 10px;
   border-radius: 50%;
 }
-.icons a i{
+.icons a i {
   font-size: 2em;
   color: black;
 }
 
-.footerNav ul{
+.footerNav ul {
   padding-top: 70px;
   display: flex;
   justify-content: center;
 }
 
-.footerNav ul li a{
+.footerNav ul li a {
   color: black;
   margin: 20px;
   font-size: 20px;

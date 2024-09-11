@@ -38,6 +38,31 @@
 .flipped {
   transform: rotateX(180deg);
 }
+
+/* header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+}
+
+.left {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.right {
+  margin: 20px;
+  font-size: 22px;
+  word-spacing: 25px;
+  font-weight: 600;
+}
+
+/* footer */
+footer{
+}
 #save-recipe {
   background-color: #4CAF50;
   color: white;
@@ -53,6 +78,7 @@
   cursor: pointer;
 }
 .footer{
+
   background-color: white;
 }
 .footerContainer{
@@ -84,8 +110,14 @@
   margin: 20px;
   font-size: 20px;
 }
-.footerBottom{
-  background-color: #000;
-  padding: 20px;
-  text-align: center;
+
+#add-new {  
+    background-image: url(/imgs/plus-square-outline.256x256.png);
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+}
+#new-card:active #add-new{
+    background-image: url(/imgs/plus-square.256x256.png);
+    transition: 150ms;
 }

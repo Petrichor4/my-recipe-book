@@ -16,6 +16,7 @@
   
       <div class="right">
         <span>Favorites</span>
+        <!-- <i id="search-icon" class="fa-solid fa-magnifying-glass"></i> -->
         <input class="rounded-full p-2 px-3" placeholder="Search" type="text">  
         <i class="fa-solid fa-right-to-bracket"></i>
       </div>
@@ -76,6 +77,51 @@
           </div>
         </div>
       </article>
+        <article class="my-5 card">
+          <div id="front" class="flex justify-start">
+            <img src="https://www.platingsandpairings.com/wp-content/uploads/2018/11/hungarian-mushroom-soup-13.jpg" alt="" />
+            <div id="info" class="flex items-start flex-col">
+              <h2 class="w-full block px-4 py-2 text-3xl text-center">
+                Creamy Hungarian Mushroom Soup
+              </h2>
+              <p class="p-4">
+                This creamy Hungarian Mushroom Soup with Fresh Dill is rich, with hints of smokiness and a great umami flavor. It’s the perfect bowl of soup to warm up with this season!
+              </p>
+  
+            </div>
+            <div class="flip-icon" onclick="flipCard(this)">
+              <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;"">
+              </i></div>
+          </div>
+          <div id="back">
+            <h2>Recipe:</h2>
+            <p class="w-full p-4 h-4/5 overflow-auto">
+              Ingredients:
+              4 Tablespoons butter
+              1 large onion (diced )
+              1 pound mushrooms sliced (white, cremini and/or a mix of wild mushrooms like chanterelles)
+              3 Tablespoons flour
+              1 Tablespoon paprika
+              3 cups vegetable stock (chicken stock or bone broth)
+              3 Tablespoons soy sauce
+              1 cup 2% milk
+              1/2 cup sour cream
+              1 Tablespoon lemon juice
+              1 Tablespoon chopped fresh dill (or 2 tsp. dried dill)
+              ¼ cup chopped fresh parsley
+              Salt and pepper to taste
+              Instructions:
+              Melt the butter in a large saucepan over medium heat, add the onions and mushrooms and cook until the mushrooms have released their liquids and it has evaporated, about 10-15 minutes.
+              Mix in the flour and paprika and let it cook for 2-3 minutes.
+              Add the stock, soy sauce and milk, bring to a gentle boil, reduce the heat and simmer for 10 minutes.
+              Remove from heat and mix in the sour cream, lemon juice, dill and parsley. Season to taste with salt and pepper.              </p>
+            <a href="https://www.platingsandpairings.com/hungarian-mushroom-soup-with-fresh-dill/#recipe" target="_blank">Go to Recipe</a>
+            <div class="flip-icon" onclick="flipCard(this)">
+              <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i>
+            </div>
+          </div>
+        </article>
+  
 
       <!-- New Recipe Card -->
       <article id="new-card" class="my-5 card">

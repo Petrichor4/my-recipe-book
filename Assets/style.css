@@ -79,10 +79,13 @@ nav {
   transition: 500ms;
 }
 
+#search-icon {
+  margin-right: -20px;
+}
+
 .right input:focus {
   outline: solid 2px blue;
   border-radius: 50px;
-  /* outline: blue; */
   width: 250px;
   transition: 300ms;
 }

@@ -10,17 +10,20 @@ document.getElementById('save-recipe').addEventListener('click', function() {
         <div id="front" class="flex justify-start">
           <img src="${imgUrl}" alt="" />
           <div id="info" class="flex items-start flex-col">
-            <h2 class="w-full block px-4 py-2 text-3xl text-center">
+            <h2 class="title w-full block px-4 py-2 text-3xl text-center">
               ${title}
             </h2>
             <p class="p-4">${description}</p>
           </div>
-          <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+          <div class="flip-icon" onclick="flipCard(this)">
+          <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i>
+          </div>
         </div>
         <div id="back">
-          <h2>Recipe</h2>
+          <h2 class="title">Recipe:</h2>
+          <p contenteditable='true' class="w-full p-4 h-4/5 overflow-auto">Copy Your Recipe Here!</p>
           <a href="${linkUrl}" target="_blank">Go to Recipe</a>
-          <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+          <div class="flip-icon" onclick="flipCard(this)"><i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i></div>
         </div>
     `;
 
@@ -38,6 +41,11 @@ document.getElementById('save-recipe').addEventListener('click', function() {
 function flipCard(element) {
     const card = element.closest('.card');
     card.classList.toggle('flipped');
+}
+
+function openMenu() {
+    const menu = document.querySelector('aside');
+    menu.classList.toggle('open');
 }
 
 

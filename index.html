@@ -7,53 +7,137 @@
     <link rel="stylesheet" href="Assets/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      .title {
+        font-weight: 600;
+      } 
+      </style>
   </head>
   <body>
     <nav>
+      <div onclick="openMenu()" 
+        class="flex flex-wrap justify-center content-center h-10 min-w-10 rounded-full bg-gray-50 hover:bg-gray-100 active:bg-gray-200 inset-5 min-[860px]:hidden"
+        >
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <div class="left">
         <span>My Recipe Book</span>
       </div>
   
       <div class="right">
         <span>Favorites</span>
-        <span>Search-Bar</span>
-  
-          <i class="fa-solid fa-right-to-bracket"></i>
-        </a>
+        <!-- <i id="search-icon" class="fa-solid fa-magnifying-glass"></i> -->
+        <input class="rounded-full p-2 px-3" placeholder="Search" type="text">  
+        <i class="fa-solid fa-right-to-bracket"></i>
       </div>
     </nav>
-<body>
   <main class="flex justify-start">
-    <aside class="shadow-md bg-stone-200 m-5 rounded-lg w-[300px] h-[600px]"></aside>
+    <aside class="hash shadow-md bg-stone-200 m-5 rounded-lg min-[860px]:min-w-[300px] h-[600px] sticky inset-5"></aside>
     <section id="recipes-cards" class="flex flex-wrap">
       <!-- Existing Recipe Card -->
       <article class="my-5 card">
         <div id="front" class="flex justify-start">
-          <img src="/imgs/MarryMeChicken_7.webp" alt="" />
+          <img src="./imgs/MarryMeChicken_7.webp" alt="" />
           <div id="info" class="flex items-start flex-col">
-            <h2 class="w-full block px-4 py-2 text-3xl text-center">
+            <h2 class="title block px-4 py-2 min-[860px]:text-3xl text-center">
               Marry Me Chicken
             </h2>
             <p class="p-4">
-              A delicious chicken recipe that will make anyone fall in love with you.
+              Marry Me Chicken is creamy, juicy, and full of flavor! It's said that this chicken dinner is so good that if you cook it for your partner, he will propose to you! Yes, it's THAT amazing! Funny name, but probably the best chicken recipe ever!
             </p>
 
           </div>
-          <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+          <div class="flip-icon" onclick="flipCard(this)">
+            <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;"">
+            </i></div>
         </div>
         <div id="back">
-          <h2>Recipe</h2>
-          <a href="https://www.example.com/marry-me-chicken" target="_blank">Go to Recipe</a>
-          <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+          <h2 class="title">Recipe:</h2>
+          <p class="w-full p-4 h-4/5 overflow-auto">
+  Ingredients
+  ▢3 large chicken breasts boneless and skinless, sliced lengthwise into thin cutlets
+  ▢½ teaspoon salt
+  ▢¼ teaspoon ground black pepper
+  ▢6 tablespoons (50 grams) all-purpose flour
+  ▢2 tablespoons (30 ml) olive oil
+  ▢2 tablespoons (28 grams) unsalted butter
+  ▢3 cloves garlic minced
+  ▢1 cup (240 ml) chicken stock
+  ▢1 cup (240 ml) heavy cream (double cream in the UK)
+  ▢½ cup (43 grams) parmesan cheese grated
+  ▢1 teaspoon chili flakes
+  ▢¼ teaspoon oregano
+  ▢¼ teaspoon thyme
+  ▢⅓ cup sundried tomatoes chopped
+  ▢1 tablespoon fresh basil leaves
+  Instructions
+  Season chicken with salt and pepper, then dredge in flour and shake off any excess.
+            
+  In a large skillet, heat olive oil and melt the butter on medium heat. Swirl pan to coat with oil and butter evenly.
+  Brown the chicken (do not overcrowd and work in batches if needed) for 4-5 minutes on each side or until golden brown and cooked through. Transfer onto a plate, cover, and set aside.
+  Saute the garlic for a minute or until it's fragrant. Add the chicken stock, and deglaze the pan scraping any bits stuck to the bottom of the pan with a wooden spoon.
+  Adjust the heat to medium-low, and add the heavy cream and the parmesan cheese to the skillet. Allow the sauce to simmer for a couple of minutes, then season with chili flakes, thyme, and oregano.
+  Season with salt and pepper to your taste, add the sundried tomatoes then put the chicken back in the sauce and let the sauce simmer and thicken for a few more minutes.
+  Garnish with chopped fresh basil leaves and serve warm over pasta or rice.
+            </p>
+          <a href="https://littlesunnykitchen.com/marry-me-chicken/" target="_blank">Go to Recipe</a>
+          <div class="flip-icon" onclick="flipCard(this)">
+            <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i>
+          </div>
         </div>
       </article>
+        <article class="my-5 card">
+          <div id="front" class="flex justify-start">
+            <img src="https://www.platingsandpairings.com/wp-content/uploads/2018/11/hungarian-mushroom-soup-13.jpg" alt="" />
+            <div id="info" class="flex items-start flex-col">
+              <h2 class=" title w-full block px-4 py-2 min-[860px]:text-3xl text-center">
+                Creamy Hungarian Mushroom Soup
+              </h2>
+              <p class="p-4">
+                This creamy Hungarian Mushroom Soup with Fresh Dill is rich, with hints of smokiness and a great umami flavor. It’s the perfect bowl of soup to warm up with this season!
+              </p>
+  
+            </div>
+            <div class="flip-icon" onclick="flipCard(this)">
+              <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;"">
+              </i></div>
+          </div>
+          <div id="back">
+            <h2 class="title">Recipe:</h2>
+            <p class="w-full p-4 h-4/5 overflow-auto">
+              Ingredients:
+              4 Tablespoons butter
+              1 large onion (diced )
+              1 pound mushrooms sliced (white, cremini and/or a mix of wild mushrooms like chanterelles)
+              3 Tablespoons flour
+              1 Tablespoon paprika
+              3 cups vegetable stock (chicken stock or bone broth)
+              3 Tablespoons soy sauce
+              1 cup 2% milk
+              1/2 cup sour cream
+              1 Tablespoon lemon juice
+              1 Tablespoon chopped fresh dill (or 2 tsp. dried dill)
+              ¼ cup chopped fresh parsley
+              Salt and pepper to taste
+              Instructions:
+              Melt the butter in a large saucepan over medium heat, add the onions and mushrooms and cook until the mushrooms have released their liquids and it has evaporated, about 10-15 minutes.
+              Mix in the flour and paprika and let it cook for 2-3 minutes.
+              Add the stock, soy sauce and milk, bring to a gentle boil, reduce the heat and simmer for 10 minutes.
+              Remove from heat and mix in the sour cream, lemon juice, dill and parsley. Season to taste with salt and pepper.              </p>
+            <a href="https://www.platingsandpairings.com/hungarian-mushroom-soup-with-fresh-dill/#recipe" target="_blank">Go to Recipe</a>
+            <div class="flip-icon" onclick="flipCard(this)">
+              <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i>
+            </div>
+          </div>
+        </article>
+  
 
       <!-- New Recipe Card -->
-      <article id="new-card" class="my-5 card">
+      <article id="new-card" class="min-[860px]:my-5 card">
         <div id="front" class="flex justify-start">
           <div id="info" class="flex flex-col flex-1 justify-center items-center">
-            <h2 class="w-full block px-4 py-2 text-3xl text-center">
-              Click Here To Create A New Recipe
+            <h2 class=" title w-full block px-4 py-2 min-[860px]:text-3xl text-center">
+              Create New Recipe
             </h2>
             <div class="flex flex-col items-center">
               <input type="text" id="recipe-title" placeholder="Recipe Title" class="block my-2 p-2 border rounded-md" />

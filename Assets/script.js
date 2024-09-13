@@ -59,6 +59,11 @@ function saveRecipeToLocalStorage(recipe) {
   recipes.push(recipe);
   localStorage.setItem('recipes', JSON.stringify(recipes));
 }
+function openMenu() {
+    const menu = document.querySelector('aside');
+    menu.classList.toggle('open');
+}
+
 
 function loadSavedRecipes() {
   const recipes = JSON.parse(localStorage.getItem('recipes')) || [];

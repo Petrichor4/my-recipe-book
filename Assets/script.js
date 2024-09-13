@@ -40,12 +40,16 @@ function createRecipeCard(recipe) {
           </h2>
           <p class="p-4">${recipe.description}</p>
         </div>
-        <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+        <div class="flip-icon" onclick="flipCard(this)"><i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i>
+        </div>
       </div>
       <div id="back">
-        <h2>Recipe</h2>
+        <h2>Recipe:</h2>
+        <p id="recipe" contenteditable="true" class="w-full h-4/5"${recipe.userRecipe}></p>
         <a href="${recipe.linkUrl}" target="_blank">Go to Recipe</a>
-        <div class="flip-icon" onclick="flipCard(this)">🔄</div>
+        <div class="flip-icon" onclick="flipCard(this)">
+        <i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;""></i>
+        </div>
       </div>
   `;
 

@@ -24,10 +24,15 @@
     </nav>
 <body>
   <main class="flex justify-start">
-    <aside class="shadow-md bg-stone-200 m-5 rounded-lg w-[300px] h-[600px]"></aside>
+    <aside class="shadow-md bg-stone-200 m-5 rounded-lg w-[300px] h-[600px]">
+      <h3 class="text-lg font-semibold mb-4">Filter</h3>
+      <div id="adjective-buttons">
+        <!-- Buttons will be here  -->
+      </div>
+    </aside>
     <section id="recipes-cards" class="flex flex-wrap">
       <!-- Existing Recipe Card -->
-      <article class="my-5 card">
+      <article class="my-5 card" data-adjectives="delicious,quick">
         <div id="front" class="flex justify-start">
           <img src="/imgs/MarryMeChicken_7.webp" alt="" />
           <div id="info" class="flex items-start flex-col">
@@ -66,7 +71,6 @@
           </article>
       </section>
     </main>
-    <script src="./Assets/script.js"></script>
     <footer>
       <div class="footerNav">
         <ul>

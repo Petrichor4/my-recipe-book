@@ -108,3 +108,65 @@ nav {
   margin: 20px;
   font-size: 20px;
 }
+
+.adjective-button {
+  display: flex;
+  flex-direction: column;
+  background-color: #3490dc; 
+  color: white;
+  margin: 4px;
+  padding: 6px;
+  border-radius: 3px; 
+  
+ 
+}
+
+.adjective-button:hover {
+  background-color: #2779bd; 
+  transform: scale(1.08);
+}
+
+
+#login-button {
+  background-color: #3b82f6; 
+  color: white; 
+  padding: 8px 16px; 
+  border-radius: 6px;  
+  width: 100%; 
+}
+
+.graybg {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    background-color: #f3f4f6; 
+    margin: 0; 
+
+}
+
+.whitebg {
+  background-color: white; 
+  padding: 24px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  width: 320px; 
+  max-width: 100%; 
+}
+
+.login {
+  font-size: 20px; 
+  font-weight: 600; 
+  margin-bottom: 16px; 
+  text-align: center; 
+}
+
+.input {
+  width: 100%; 
+  padding: 8px; 
+  margin-bottom: 5px; 
+  border: 1px solid #d1d5db; 
+  border-radius: 4px; 
+  font-size: 16px; 
+  box-sizing: border-box; 
+}

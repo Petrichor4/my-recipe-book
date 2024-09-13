@@ -18,7 +18,7 @@ if (loginBtn) {
 
 // Other JavaScript code here...
 // For example, create buttons for filtering recipes:
-const adjectives = ['Delicious', 'Quick', 'Healthy', 'Bad', 'Tasty'];
+const adjectives = ['Delicious', 'Quick', 'Healthy', 'Bad'];
 
 function createAdjectiveButtons() {
   let container = document.getElementById('adjective-buttons');

@@ -36,6 +36,16 @@
 #front {
   background-color: #ffffff;
 }
+#delete {
+  position: absolute; 
+  top: 0px;
+  left: 0px; 
+  display:inline; 
+  color:white; 
+  cursor:pointer;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px 0 0 0;
+}
 #back {
   background-color: #ffffff;
   transform: rotateX(180deg);
@@ -62,6 +72,7 @@ menu {
   position: absolute;
   top: 90px;
   left: 0;
+  transition: 300ms;
   display: inline-block;
   z-index: 1;
   box-shadow: var(--shadow-);
@@ -108,10 +119,6 @@ nav {
 .right input {
   width: 100px;
   transition: 500ms;
-}
-
-#search-icon {
-  margin-right: -20px;
 }
 
 .right input:focus {

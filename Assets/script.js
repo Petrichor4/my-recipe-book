@@ -100,18 +100,18 @@ function createRecipeCard(recipe) {
   newRecipeCard.setAttribute('data-id', recipe.id); // Add data-id attribute
   newRecipeCard.innerHTML = `
       <div id="front" class="flex justify-start">
-        <img src="${recipe.imgUrl}" alt="" />
-        <i class=" p-3 fa-solid fa-x fa-2xs" style="color: #dbdfe6;" onclick="deleteCard(${recipe.id})"></i> <!-- Add onclick handler -->
-        <div id="info" class="flex items-start flex-col">
-          <h2 class="w-full block px-4 py-2 text-3xl text-center">
-            ${recipe.title}
-          </h2>
-          <p class="p-4">${recipe.description}</p>
-        </div>
-        <div class="flip-icon" onclick="flipCard(this)"><i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;"></i>
-        </div>
+      <img src="${recipe.imgUrl}" alt="" />
+      <div id="info" class="flex items-start flex-col">
+      <h2 class="w-full block px-4 py-2 text-3xl text-center">
+      ${recipe.title}
+      </h2>
+      <p class="p-4">${recipe.description}</p>
+      </div>
+      <div class="flip-icon" onclick="flipCard(this)"><i class="fa-solid fa-repeat fa-rotate-by fa-sm" style="--fa-rotate-angle: 90deg;"></i>
+      </div>
       </div>
       <div id="back">
+      <i id="delete" class=" p-3 fa-solid fa-x fa-2xs" onclick="deleteCard(${recipe.id})"></i> <!-- Add onclick handler -->
         <h2>Recipe:</h2>
         <p id="recipe" contenteditable="true" class="w-full h-4/5"></p>
         <a href="${recipe.linkUrl}" target="_blank">Go to Recipe</a>

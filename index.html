@@ -14,9 +14,9 @@
       </style>
   </head>
   <body>
-    <nav>
+    <nav class="px-4">
       <div onclick="openMenu()" 
-        class="flex flex-wrap justify-center content-center h-10 min-w-10 rounded-full bg-gray-50 hover:bg-gray-100 active:bg-gray-200 inset-5 min-[860px]:hidden"
+        class="flex flex-wrap justify-center content-center h-10 min-w-10 rounded-full bg-gray-50 hover:bg-gray-100 active:bg-gray-200"
         >
         <i class="fa-solid fa-bars"></i>
       </div>
@@ -28,17 +28,20 @@
         <span>Favorites</span>
         <!-- <i id="search-icon" class="fa-solid fa-magnifying-glass"></i> -->
         <input class="rounded-full p-2 px-3" placeholder="Search" type="text">  
-        <i class="fa-solid fa-right-to-bracket"></i>
+        <i onclick="login()" class=" login fa-solid fa-right-to-bracket hover:cursor-pointer"></i>
       </div>
     </nav>
-  <main class="flex justify-start">
-    <aside class="shadow-md bg-stone-200 m-5 rounded-lg w-[300px] h-[600px]">
-      <h3 class="text-lg font-semibold mb-4">Filter</h3>
-      <div id="adjective-buttons">
-        <!-- Buttons will be here  -->
+  <main class="flex justify-around">
+    <aside class="flex flex-col bg-stone-500 bg-opacity-75 w-[100%] h-[100%] hidden">
+      <div class="sitenav w-96 h-[100%] bg-white">
+        <h3 class="block text-lg font-semibold m-5">Filter By Category:</h3>
+        <div id="adjective-buttons" class="p-4">
+          <!-- Buttons will be here  -->
+        </div>
+        <button id="clear" class="m-5 underline">Clear</button>
       </div>
     </aside>
-    <section id="recipes-cards" class="flex flex-wrap">
+    <section id="recipes-cards" class="flex flex-wrap w-[90%] ml-12">
       <!-- Existing Recipe Card -->
       <article class="my-5 card" data-adjectives="delicious,quick">
         <div id="front" class="flex justify-start">
@@ -135,9 +138,6 @@
             </div>
           </div>
         </article>
-  
-        </div>
-      </div>
     </article>
       <article class="my-5 card">
         <div id="front" class="flex justify-start">
@@ -211,10 +211,8 @@ Refrigerate leftovers either plastic wrapped or stored in an airtight container 
           </div>
         </div>
       </article>
-
-
       <!-- New Recipe Card -->
-      <article id="new-card" class="min-[860px]:my-5 card">
+      <article id="new-card" class="min-[860px]:my-5 mb-5 card">
         <div id="front" class="flex justify-start">
           <div id="info" class="flex flex-col flex-1 justify-center items-center">
             <h2 class=" title w-full block px-4 py-2 min-[860px]:text-3xl text-center">
@@ -231,7 +229,7 @@ Refrigerate leftovers either plastic wrapped or stored in an airtight container 
           </article>
       </section>
     </main>
-    <footer>
+    <footer class="mt-6">
       <div class="footerNav">
         <ul>
           <li><a href="">Home</a></li>

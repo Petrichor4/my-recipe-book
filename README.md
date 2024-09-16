@@ -1,5 +1,5 @@
 # my-recipe-book
-My recipes book is a collaboration to accomplish the arduos task of keeping orginized in the kitchen.
+My recipes book is a collaboration to accomplish the arduous task of keeping orginized in the kitchen.
 We built the app to easily store and orginize recipes in a beautiful and easy to navigate way to minimize the hassel that comes with cooking.
 We learned that we needed this app more than we thought we would.
 ## Usage 

@@ -94,6 +94,20 @@ document.getElementById('save-recipe').addEventListener('click', function() {
   document.getElementById('recipe-description').value = '';
 });
 
+function deletePrompt(recipeId) {
+  const AYS = document.getElementById('modal');
+  let yes = document.getElementById('yes');
+  let no = document.getElementById('no');
+  AYS.classList.remove('hidden');
+  yes.onclick = function() {
+    deleteCard(recipeId);
+    AYS.classList.add('hidden');
+  }
+  no.onclick = function() {
+    AYS.classList.add('hidden');
+  }
+}
+
 function createRecipeCard(recipe) {
   const newRecipeCard = document.createElement('article');
   newRecipeCard.classList.add('my-5', 'card');
@@ -111,7 +125,7 @@ function createRecipeCard(recipe) {
       </div>
       </div>
       <div id="back">
-      <i id="delete" class=" p-3 fa-solid fa-x fa-2xs" onclick="deleteCard(${recipe.id})"></i> <!-- Add onclick handler -->
+      <i id="delete" class=" p-3 fa-solid fa-x fa-2xs" onclick="deletePrompt(${recipe.id})"></i> <!-- Add onclick handler -->
         <h2>Recipe:</h2>
         <p id="recipe" contenteditable="true" class="w-full h-4/5"></p>
         <a href="${recipe.linkUrl}" target="_blank">Go to Recipe</a>
@@ -150,6 +164,7 @@ function flipCard(element) {
 function login() {
   window.location.href = 'login.html'
 }
+
 
 function deleteCard(recipeId) {
   // Retrieve the list of recipes from localStorage

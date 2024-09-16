@@ -7,7 +7,8 @@ if (loginBtn) {
     const password = document.getElementById('password').value;
     
     // Current login info
-    if (username === "username" && password === "password") {
+    // if (username === "username" && password === "password") {
+      if (username && password) {
       //   alert("Login successful!");
       window.location.href = "index.html"; 
     } else {

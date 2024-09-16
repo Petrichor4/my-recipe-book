@@ -7,7 +7,8 @@ if (loginBtn) {
     const password = document.getElementById('password').value;
     
     // Current login info
-    if (username === "username" && password === "password") {
+    // if (username === "username" && password === "password") {
+      if (username && password) {
       //   alert("Login successful!");
       window.location.href = "index.html"; 
     } else {
@@ -18,7 +19,7 @@ if (loginBtn) {
 
 // Other JavaScript code here...
 // For example, create buttons for filtering recipes:
-const adjectives = ['Delicious', 'Quick', 'Healthy', 'Bad', 'Tasty'];
+const adjectives = ['Delicious', 'Quick', 'Healthy', 'Bad'];
 
 function createAdjectiveButtons() {
   let container = document.getElementById('adjective-buttons');
